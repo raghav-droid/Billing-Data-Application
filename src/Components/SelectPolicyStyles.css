@@ -1,0 +1,51 @@
+/* frontend/src/components/SelectPolicy.css */
+.policy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f0f2f5;
+    height: 100vh;
+  }
+  
+  .policy-form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .policy-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .policy-form select,
+  .policy-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .policy-form select {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .policy-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .policy-form button:hover {
+    background-color: #0056b3;
+  }
+  
