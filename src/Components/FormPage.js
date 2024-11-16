@@ -39,6 +39,18 @@ function FormPage({ policy }) {
 
   const addEntry = () => {
     const entryWithType = { ...formData, "TYPE OF BATCH": policy };
+
+    // Check for duplicates based on "BATCH NO"
+    const isDuplicate = entries.some(
+      (entry) => entry["BATCH NO"] === entryWithType["BATCH NO"]
+    );
+
+    if (isDuplicate) {
+      alert("This BATCH NO already exists. Please use a unique entry.");
+      return; // Stop further execution if a duplicate is found
+    }
+
+    // Add entry if no duplicates are found
     setEntries([...entries, entryWithType]);
     setFormData({});
   };
